@@ -25,8 +25,9 @@ emojiLove(student: "jack", student2: "rose")
 //: ### Exercise 15
 //: The function `median` should take three `Int` parameters and return the `Int` value in the middle.
 func median(n1: Int ,n2: Int, n3:Int) -> Int {
-    /* add function implementation here */
-    return n2
+    var array = [n1, n2, n3]
+    array.sort(by: <)
+    return array[1]
 }
 
 
@@ -60,7 +61,7 @@ func beginsWithVowel(vowelChecker: String) -> Bool {
     }
     else {
         let character = vowelChecker.characters[vowelChecker.startIndex]
-    if character == "a"{
+        if character == "a"{
         return true
     }else if character == "e"{
         return true
